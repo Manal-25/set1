@@ -15,17 +15,6 @@ class Mongo {
         });
     }
 
-    // update = (query, payload, modelName) => {
-    //     let Model = mongoose.model(modelName);
-    //     return new Promise((resolve, reject) => {
-    //         Model.updateOne(query, payload).then(result => {
-    //             resolve({ data: result });
-    //         }).catch(err => {
-    //             reject(err);
-    //         });
-    //     });
-    // }
-
     update = (query, payload, modelName) => {
         let Model = mongoose.model(modelName);
         return new Promise((resolve, reject) => {
